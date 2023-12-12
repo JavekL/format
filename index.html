@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<body>
+<head>
+    <meta charset="UTF-8">
+    <title>My personal Profile Design</title>
+<style>
+  body {
+  color: white;
+  margin: 0;
+  }
+  #home, #about-me, #hobbies, #contact {
+  height: 780px;  
+  }
+  
+  #home {
+        font-family: Arial, sans-serif;
+        background: white;
+        margin: 0;
+        padding: 0;
+  }
+      /* CSS 规则集 9 */
+    .header {
+        position: relative; /* 使标题的定位相对于该容器 */
+        height: 300px; /* 设置容器高度 */
+        background-color: #f2f2f2; /* 为了看清楚容器的范围 */
+    }
+    
+    h1 {
+        font-size: 30px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 130px; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        margin-left: 125px; /* 将左侧设置为自动 */
+      	color: #9353e2;
+      	z-index: 2
+  }
+  	    
+    h2 {
+        font-size: 80px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 120px; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        margin-left: 150px; /* 将左侧设置为自动 */
+      	color: black;
+      	z-index: 2
+  }
+  
+    h3 {
+        font-size: 100px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 150px; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        margin-left: 150px; /* 将左侧设置为自动 */
+      	color: #f16745;
+      	z-index: 2
+  }
+    h4 {
+        font-size: 50px;
+        position: absolute; /* 将标题的定位设置为绝对定位 */
+        top: 280px; /* 距离容器顶部50px */
+        right: auto; /* 距离容器右侧20px */
+        margin-left: 150px; /* 将左侧设置为自动 */
+      	color: black;
+      	z-index: 2
+  }
+      
+      
+    /* CSS 规则集 3 */
+    p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 400px; /* 调整 p 元素在 h4 底下的位置 */
+        margin-left: 150;
+        width: 400px; /* 设置宽度 */
+        text-align: justify; /* 对齐文本 */
+      	color: #686868;
+       z-index: 2;
+    }
+    
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    
+    table, th, td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+  
+
+/* Button */
+.section-button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #9353e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px; /* 设置按钮之间的间距 */  
+  	float: left;
+  	z-index: 2
+  }
+
+  #home-button {
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 850px;
+  	float: left;
+}
+  
+#contact-button {
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 1300px;
+  	float: left;
+}
+
+#about-me-button {
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 1150px;
+  	float: left;
+}
+
+#hobbies-button {
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 1000px;
+  	float: left;
+}
+  
+  
+  
+  /* 图片&模块 */
+  
+  	.image1 {
+        position: absolute; 
+        top: 0; 
+        margin-left: 770;
+      	float: left;
+    }
+  
+  	.vertical-dashed-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-left: 700; /* 放置在页面中间 */
+        border-left: 3px dashed #614992; /* 定义虚线样式 */
+        content: "";
+      	float: left;
+        z-index: 2;
+  		}
+  
+  
+  #about-me {
+    background-color: #423711;
+  }
+  #hobbies {
+    background-color: #bbb5a7;
+  }
+  #contact {
+    background-color: #8b2e25;
+  }
+</style>
+</head>
+  
+
+  
+		<a href="#home" class="section-button" id="home-button">home</a>
+		<a href="#contact" class="section-button" id="contact-button">Contact</a>
+		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
+		<a href="#hobbies" class="section-button" id="hobbies-button">Hobbies</a>
+
+<div id="home">
+    <header>
+    <h1>UI/UX Designer</h1>
+    <h2>Hello, I'm</h2>
+    <h3>Javek</h3>
+    <h4>UW GBDA Student</h4>
+    </header>
+    
+    <p>"Hello, my name is Javek Liang. I am studying 
+      at the University of Waterloo, majoring in Global 
+      Business and Digital Arts. I am passionate about 
+      user experience and front-end development and enjoy 
+      exploring new technologies. In my spare time, I enjoy 
+      reading, painting, outdoor hiking and photography.</p>
+      
+    <h5 style="float: left; position: absolute; text-align:center; margin-top: 550px; margin-left: 780px; color: purple; z-index: 2; font-size: 26px; font-family: 'Montserrat', sans-serif; width: 700px;">
+      "When you stride forward with determination, 
+        the radiance of your dreams will guide your way."</h5>
+      
+    <img src="me.jpg" alt="my photo" class="image1" width="765px" height="530">
+    <div class="pagerect"></div>
+    <div class="photorect"></div>
+    <div class="pagerect1"></div>
+    <div class="Toprect"></div>
+    <div class="pagerect2"></div>
+		<div class="vertical-dashed-line"></div>
+</div>
+<div id="about-me">
+Your amazing content goes here!
+</div>
+<div id="hobbies">
+Your amazing content goes here!
+</div>
+<div id="contact">
+Your amazing content goes here!
+</div>
+</body>
+</html>
